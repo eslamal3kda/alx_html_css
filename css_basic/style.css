@@ -1,0 +1,33 @@
+body, main {
+    display: flex;
+}
+
+body{
+    flex-direction: column;
+}
+
+main {
+    flex-direction: row;
+    flex: auto;
+}
+
+article {
+    flex: 2;
+    overflow-y: auto;
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+}
+header{
+    display: flex;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+table td ,table th {
+    padding: 10px 30px;
+}
