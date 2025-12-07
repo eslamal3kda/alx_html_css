@@ -10,7 +10,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: SourceSansPro-r;
+    font-family: SourceSansPro;
 }
 
 a {
@@ -27,8 +27,23 @@ ul {
 }
 
 @font-face {
-    font-family: SourceSansPro-r;
+    font-family: SourceSansPro;
+    src: url("./assets/fonts/SourceSansPro-Light.otf"),format("otf");
+    font-weight: 200;
+}
+@font-face {
+    font-family: SourceSansPro;
     src: url("./assets/fonts/SourceSansPro-Regular.otf"),format("otf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: SourceSansPro;
+    src: url("./assets/fonts/SourceSansPro-Bold.otf"),format("otf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: spincycle;
+    src: url("./assets/fonts/spincycle_ot.otf");
 }
 
 /* Start Header Style */
@@ -134,5 +149,39 @@ header ul {
 
             }
         }
+    }
+}
+/* End Banner Section Style */
+
+/* Start qoute section style */
+.quote-section {
+    height: 392px;
+    background-color: var(--subColor);
+    color: var(--mainColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 53px;
+    .quote-section-content {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        blockquote {
+            width: 750px;
+            q {
+                font-size: 22px;
+                font-weight: 200;
+            }
+        }
+        .quote-section-content-author {
+            h3 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 22px;
+                font-weight: 200;
+            }
+        }
+        
     }
 }
