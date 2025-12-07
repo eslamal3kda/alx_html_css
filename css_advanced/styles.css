@@ -1,0 +1,138 @@
+/* My Variables */
+:root {
+    --mainColor: #FFF ;
+    --subColor:#C271FF ;
+    --darkColor:#071629 ;
+}
+
+/* Reset My Page */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: SourceSansPro-r;
+}
+
+a {
+    color: #2e2e2e;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.special-word {
+    color: var(--subColor);
+}
+
+@font-face {
+    font-family: SourceSansPro-r;
+    src: url("./assets/fonts/SourceSansPro-Regular.otf"),format("otf");
+}
+
+/* Start Header Style */
+header {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding:2rem 5.8rem;
+}
+
+header .logo {
+    cursor: pointer;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    li {
+        a {
+            color:#FFF ;
+            transition: 0.3s;
+            &:hover {
+                color: var(--darkColor);
+            }
+        }
+    }
+}
+/* End Header Style */
+
+/* Start Banner Section Style */
+.banner-section {
+    background-image: url("./assets/images/Object.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1043px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+    .banner-header {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-size: 120px;
+            color: var(--mainColor);
+        }
+        p {
+            margin-bottom: 38px;
+            span {
+                margin-right: 56px;
+                color: var(--mainColor);
+                font-weight: bold;
+            }
+        }
+        button {
+            width: 162px;
+            height: 44px;
+            border-radius: 22px;
+            background-color: var(--subColor);
+            color: var(--mainColor);
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: bold;
+            box-shadow: 0px 6px 10px 0px var(--darkColor);
+        }
+    }
+    .banner-pros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 87px;
+        h2,h3,p {
+            color: var(--mainColor);
+        }
+        .pros {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 136px;
+            .single-pro {
+                width: 150px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                text-align: center;
+                img {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                }
+
+            }
+        }
+    }
+}
