@@ -195,3 +195,84 @@ header ul {
     }
 }
 /* End quote section style */
+
+/* Start video section style */
+.videos-section {
+    height: 624px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    h2 {
+        font-weight: 200;
+        span {
+            font-weight: 700;
+        }
+    }
+    .videos {
+        display: flex;
+        gap: 30px;
+        .single-video {
+            width: 255px;
+            height: 335px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            .video-img {
+                position: relative;
+                width: 100%;
+                img.play-img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    cursor: pointer;
+                }
+            }
+            h3 {
+                color: var(--darkColor);
+                font-size: 16px;
+            }
+            .video-details {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                p {
+                    line-height: 24px;
+                    color: var(--darkColor);
+                    opacity: 50%;
+                }
+                .video-author {
+                    display: flex;
+                    align-items: center;
+                    gap: 13px;
+                    img {
+                        width: 30px;
+                    }
+                    h4 {
+                        color: var(--subColor);
+                    }
+                }
+                .video-rate {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .video-rate-icons {
+                        i:not(:last-child) {
+                            color: var(--subColor);
+                        }
+                        i:last-child {
+                            color: #d8d8d8;
+                        }
+                    }
+                    p {
+                        color: var(--subColor);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Video Section Style  */
