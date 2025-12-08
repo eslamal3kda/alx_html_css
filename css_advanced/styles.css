@@ -412,5 +412,44 @@ header ul {
         }
     }
 }
-
 /* End F.A.Q section style */
+
+/* Start Footer style */
+footer {
+    height: 249px ;
+    background-color: var(--darkColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--mainColor);
+    gap: 75px;
+    .footer-content {
+        padding-inline: 165px 250px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            cursor: pointer;
+        }
+        .social-links {
+            a {
+                display: inline-flex;
+                width: 30px;
+                height: 30px;
+                background-color: #FFF;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+                i {
+                    color: var(--darkColor);
+                }
+            }
+        }
+    }
+    p {
+        opacity: 35%;
+    }
+}
+/* End Footer style */
